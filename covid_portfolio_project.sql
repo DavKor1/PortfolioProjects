@@ -13,7 +13,7 @@ WHERE continent IS NOT NULL
 -- WHERE location = 'Germany'
 ORDER BY 1,2
 
--- Shows likelihood of dying of you contract covid in Germany
+-- Shows likelihood of dying if you contract covid in Germany
 
 SELECT location, date, total_cases, total_deaths, (CAST(total_deaths AS float) / CAST(total_cases AS float)) * 100 AS DeathPercentage 
 FROM PortfolioProject..covid_deaths
